@@ -54,9 +54,9 @@
   /* Brand palette */
   --ink: oklch(0.18 0.02 90);          /* near-black warm */
   --cream: oklch(0.972 0.018 95);       /* warm off-white */
-  --lime: oklch(0.92 0.21 122);         /* acid lime */
-  --coral: oklch(0.74 0.17 28);         /* warm coral */
-  --sky: oklch(0.86 0.10 230);          /* soft sky */
+  --lime: oklch(0.84 0.16 195);         /* electric teal (primary) */
+  --coral: oklch(0.84 0.16 75);         /* warm amber (accent) */
+  --sky: oklch(0.78 0.13 265);          /* soft indigo */
 
   --background: var(--cream);
   --foreground: var(--ink);
