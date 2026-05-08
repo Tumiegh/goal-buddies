@@ -17,13 +17,13 @@ import {
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "StakeUp — Bet on yourself. With your friends." },
+      { title: "Stru 🤞 — Put your money where your mouth is." },
       {
         name: "description",
         content:
-          "Pool USDC with friends, set a shared goal, and let an AI referee verify your proof. Winners split the pot. Peer pressure, but onchain.",
+          "Stru lets you and your friends pool USDC on a shared goal. An AI referee verifies your proof. Winners split the pot. Put your money where your mouth is.",
       },
-      { property: "og:title", content: "StakeUp — Bet on yourself." },
+      { property: "og:title", content: "Stru 🤞 — Put your money where your mouth is." },
       {
         property: "og:description",
         content: "Stake USDC on a shared goal. AI verifies your proof. Winners split the pot.",
@@ -39,9 +39,9 @@ function Nav() {
       <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-3">
         <Link to="/" className="flex items-center gap-2">
           <div className="flex h-9 w-9 items-center justify-center rounded-lg border-2 border-ink bg-lime shadow-brutal-sm">
-            <span className="font-display text-lg font-extrabold">S</span>
+            <span className="text-lg leading-none">🤞</span>
           </div>
-          <span className="font-display text-xl font-extrabold tracking-tight">StakeUp</span>
+          <span className="font-display text-xl font-extrabold tracking-tight">Stru</span>
           <span className="ml-1 hidden rounded-full border border-ink/30 bg-cream px-2 py-0.5 text-[10px] font-medium uppercase tracking-wider sm:inline">
             devnet
           </span>
@@ -120,18 +120,18 @@ function Hero() {
             Live on Solana devnet · Hackathon build
           </div>
           <h1 className="font-display text-5xl font-extrabold tracking-tight sm:text-7xl lg:text-[7.5rem]">
-            Bet on{" "}
+            Put your money{" "}
             <span className="relative inline-block">
-              <span className="relative z-10">yourself.</span>
+              <span className="relative z-10">where</span>
               <span className="absolute inset-x-0 bottom-2 -z-0 h-[0.45em] rounded-md bg-lime" />
             </span>
             <br />
-            With your{" "}
-            <span className="font-serif italic text-coral">friends.</span>
+            your{" "}
+            <span className="font-serif italic text-coral">mouth</span> is.
           </h1>
           <p className="mx-auto mt-7 max-w-2xl text-lg text-foreground/75 sm:text-xl">
-            Pool USDC with your group. Pick one shared goal. An AI referee checks your proof.
-            Whoever shows up splits the pot — including the slackers' money.
+            Stru pools USDC with your friends on one shared goal. An AI referee checks your proof.
+            Whoever shows up splits the pot — including the slackers' money. 🤞
           </p>
           <div className="mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row">
             <Button variant="hero" size="xl">
@@ -514,7 +514,7 @@ function Footer() {
           <div className="flex h-8 w-8 items-center justify-center rounded-md border-2 border-cream bg-lime text-ink">
             <span className="font-display font-extrabold">S</span>
           </div>
-          <span className="font-display text-lg font-extrabold">StakeUp</span>
+          <span className="font-display text-lg font-extrabold">Stru 🤞</span>
           <span className="ml-2 text-xs text-cream/50">© 2026</span>
         </div>
         <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-cream/70">
