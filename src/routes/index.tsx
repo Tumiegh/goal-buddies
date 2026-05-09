@@ -13,6 +13,9 @@ import {
   ChevronRight,
   Sparkles,
 } from "lucide-react";
+import skyClouds from "@/assets/sky-clouds.jpg";
+import brickWall from "@/assets/brick-wall.jpg";
+import grass from "@/assets/grass.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
