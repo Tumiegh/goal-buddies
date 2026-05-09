@@ -95,44 +95,69 @@ function Marquee() {
 
 function Hero() {
   return (
-    <section className="relative overflow-hidden bg-grain">
+    <section
+      className="relative overflow-hidden"
+      style={{
+        backgroundImage: `url(${skyClouds})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+    >
+      {/* cartoon sun */}
+      <div
+        className="wobble absolute -top-10 -right-10 hidden h-56 w-56 rounded-full border-[5px] border-ink bg-sky shadow-brutal-lg lg:block"
+        aria-hidden
+      />
+      {/* cartoon ground strip */}
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-x-0 bottom-0 h-24 border-t-[5px] border-ink"
+        style={{
+          backgroundImage: `url(${grass})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      />
       {/* floating stickers */}
       <div
-        className="float-slow absolute left-[6%] top-28 hidden rotate-[-8deg] rounded-2xl border-2 border-ink bg-coral px-4 py-2 text-sm font-bold text-cream shadow-brutal lg:block"
+        className="float-slow absolute left-[6%] top-28 hidden rotate-[-8deg] rounded-2xl border-[3px] border-ink bg-coral px-4 py-2 text-sm font-bold text-cream shadow-brutal lg:block"
         style={{ ["--r" as string]: "-8deg" }}
       >
         +0.4 USDC yield 🌱
       </div>
       <div
-        className="float-slow absolute right-[8%] top-44 hidden rotate-[6deg] rounded-2xl border-2 border-ink bg-sky px-4 py-2 text-sm font-bold shadow-brutal lg:block"
+        className="float-slow absolute right-[8%] top-44 hidden rotate-[6deg] rounded-2xl border-[3px] border-ink bg-sky px-4 py-2 text-sm font-bold shadow-brutal lg:block"
         style={{ ["--r" as string]: "6deg", animationDelay: "1.2s" }}
       >
         AI: ✓ counts as proof
       </div>
       <div
-        className="float-slow absolute bottom-24 left-[12%] hidden rotate-[5deg] rounded-2xl border-2 border-ink bg-lime px-4 py-2 text-sm font-bold shadow-brutal lg:block"
+        className="float-slow absolute bottom-32 left-[12%] hidden rotate-[5deg] rounded-2xl border-[3px] border-ink bg-cream px-4 py-2 text-sm font-bold shadow-brutal lg:block"
         style={{ ["--r" as string]: "5deg", animationDelay: "0.6s" }}
       >
         Pot: 240 USDC 💰
       </div>
 
-      <div className="mx-auto max-w-7xl px-5 pb-24 pt-16 sm:pt-24 lg:pt-32">
+      <div className="relative z-10 mx-auto max-w-7xl px-5 pb-32 pt-16 sm:pt-24 lg:pt-32">
         <div className="mx-auto max-w-4xl text-center">
-          <div className="mb-6 inline-flex items-center gap-2 rounded-full border-2 border-ink bg-cream px-3 py-1 text-xs font-semibold shadow-brutal-sm">
+          <div className="mb-6 inline-flex items-center gap-2 rounded-full border-[3px] border-ink bg-cream px-3 py-1 text-xs font-semibold shadow-brutal-sm">
             <span className="ticker-pulse h-2 w-2 rounded-full bg-coral" />
             Live on Solana devnet · Hackathon build
           </div>
-          <h1 className="font-display text-5xl font-extrabold tracking-tight sm:text-7xl lg:text-[7.5rem]">
+          <h1
+            className="font-display text-5xl font-extrabold tracking-tight text-ink sm:text-7xl lg:text-[7.5rem]"
+            style={{ WebkitTextStroke: "2px var(--ink)" }}
+          >
             Put your money{" "}
             <span className="relative inline-block">
               <span className="relative z-10">where</span>
-              <span className="absolute inset-x-0 bottom-2 -z-0 h-[0.45em] rounded-md bg-lime" />
+              <span className="absolute inset-x-0 bottom-2 -z-0 h-[0.45em] rounded-md border-[3px] border-ink bg-coral" />
             </span>
             <br />
             your{" "}
-            <span className="font-serif italic text-coral">mouth</span> is.
+            <span className="font-serif italic text-cream" style={{ WebkitTextStroke: "2px var(--ink)" }}>mouth</span> is.
           </h1>
-          <p className="mx-auto mt-7 max-w-2xl text-lg text-foreground/75 sm:text-xl">
+          <p className="mx-auto mt-7 max-w-2xl rounded-2xl border-[3px] border-ink bg-cream/90 px-5 py-4 text-lg text-foreground/85 shadow-brutal-sm sm:text-xl">
             Stru pools USDC with your friends on one shared goal. An AI referee checks your proof.
             Whoever shows up splits the pot — including the slackers' money. 🤞
           </p>
