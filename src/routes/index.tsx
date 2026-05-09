@@ -532,8 +532,9 @@ function FAQ() {
 
 function CTA() {
   return (
-    <section className="border-t-2 border-ink bg-coral py-28 text-cream">
-      <div className="mx-auto max-w-4xl px-5 text-center">
+    <section className="relative overflow-hidden border-t-[5px] border-ink bg-coral py-28 text-cream">
+      <div className="absolute inset-0 bg-halftone opacity-40" aria-hidden />
+      <div className="relative z-10 mx-auto max-w-4xl px-5 text-center">
         <h2 className="font-display text-5xl font-extrabold sm:text-7xl">
           Peer pressure, <br />
           <span className="font-serif italic">but make it onchain.</span>
