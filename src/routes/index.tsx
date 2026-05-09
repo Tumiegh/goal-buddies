@@ -416,7 +416,7 @@ function Mechanic() {
       id="mechanic"
       className="relative overflow-hidden border-t-[5px] border-ink py-24"
       style={{
-        backgroundImage: `linear-gradient(oklch(0.78 0.16 230 / 0.55), oklch(0.78 0.16 230 / 0.55)), url(${bubblegum})`,
+        backgroundImage: `linear-gradient(oklch(0.97 0.02 90 / 0.35), oklch(0.91 0.18 95 / 0.35)), url(${bubblegum})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
