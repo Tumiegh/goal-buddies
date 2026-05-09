@@ -55,9 +55,9 @@
   /* Gumball cartoon palette — saturated, friendly, gender-neutral */
   --ink: oklch(0.18 0.02 260);          /* near-black, slightly cool */
   --cream: oklch(0.97 0.02 90);          /* warm off-white */
-  --lime: oklch(0.78 0.16 230);          /* gumball sky-blue (primary) */
-  --coral: oklch(0.74 0.20 0);           /* hot bubblegum pink (accent) */
-  --sky: oklch(0.91 0.18 95);            /* darwin yellow */
+  --lime: oklch(0.72 0.13 220);          /* deep cartoon sky-blue (primary) */
+  --coral: oklch(0.68 0.11 35);          /* warm muted terracotta (accent) */
+  --sky: oklch(0.88 0.13 90);            /* soft butter yellow */
 
   --background: var(--cream);
   --foreground: var(--ink);
