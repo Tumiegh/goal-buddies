@@ -412,10 +412,24 @@ function Referee() {
 
 function Mechanic() {
   return (
-    <section id="mechanic" className="border-t-2 border-ink bg-lime py-24">
-      <div className="mx-auto max-w-6xl px-5">
+    <section
+      id="mechanic"
+      className="relative overflow-hidden border-t-[5px] border-ink py-24"
+      style={{
+        backgroundImage: `linear-gradient(oklch(0.78 0.16 230 / 0.55), oklch(0.78 0.16 230 / 0.55)), url(${grass})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+    >
+      {/* cartoon clouds drifting in the sky-blue overlay */}
+      <div className="wobble pointer-events-none absolute -top-8 left-10 hidden h-24 w-44 rounded-full border-[4px] border-ink bg-cream lg:block" />
+      <div
+        className="wobble pointer-events-none absolute top-16 right-16 hidden h-20 w-36 rounded-full border-[4px] border-ink bg-cream lg:block"
+        style={{ animationDelay: "1.5s" }}
+      />
+      <div className="relative z-10 mx-auto max-w-6xl px-5">
         <div className="text-center">
-          <div className="mb-3 text-xs font-bold uppercase tracking-widest">The pot mechanic</div>
+          <div className="mb-3 inline-block rounded-full border-[3px] border-ink bg-cream px-3 py-1 text-xs font-bold uppercase tracking-widest shadow-brutal-sm">The pot mechanic</div>
           <h2 className="font-display text-4xl font-extrabold sm:text-6xl">
             Efficient verification = <span className="font-serif italic">richer winners.</span>
           </h2>
