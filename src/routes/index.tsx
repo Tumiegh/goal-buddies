@@ -15,7 +15,7 @@ import {
 } from "lucide-react";
 import skyClouds from "@/assets/sky-clouds.jpg";
 import brickWall from "@/assets/brick-wall.jpg";
-import grass from "@/assets/grass.jpg";
+import bubblegum from "@/assets/bubblegum.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -120,7 +120,7 @@ function Hero() {
         aria-hidden
         className="pointer-events-none absolute inset-x-0 bottom-0 h-24 border-t-[5px] border-ink"
         style={{
-          backgroundImage: `url(${grass})`,
+          backgroundImage: `url(${bubblegum})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
@@ -416,7 +416,7 @@ function Mechanic() {
       id="mechanic"
       className="relative overflow-hidden border-t-[5px] border-ink py-24"
       style={{
-        backgroundImage: `linear-gradient(oklch(0.78 0.16 230 / 0.55), oklch(0.78 0.16 230 / 0.55)), url(${grass})`,
+        backgroundImage: `linear-gradient(oklch(0.97 0.02 90 / 0.35), oklch(0.91 0.18 95 / 0.35)), url(${bubblegum})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
