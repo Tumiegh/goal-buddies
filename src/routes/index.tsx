@@ -80,12 +80,19 @@ function Marquee() {
     "Daily Duolingo, no skips",
   ];
   return (
-    <div className="overflow-hidden border-y-2 border-ink bg-ink py-3 text-cream">
-      <div className="marquee flex w-max gap-10 whitespace-nowrap font-display text-lg font-medium">
+    <div
+      className="relative overflow-hidden border-y-[5px] border-ink py-4 text-cream"
+      style={{
+        backgroundImage: `linear-gradient(oklch(0.18 0.02 260 / 0.55), oklch(0.18 0.02 260 / 0.55)), url(${brickWall})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+    >
+      <div className="marquee flex w-max gap-10 whitespace-nowrap font-display text-lg font-bold">
         {[...items, ...items, ...items].map((t, i) => (
           <span key={i} className="flex items-center gap-10">
-            <span>{t}</span>
-            <span className="text-lime">✦</span>
+            <span className="rounded-md border-[2px] border-ink bg-cream px-3 py-1 text-ink shadow-brutal-sm">{t}</span>
+            <span className="text-sky text-2xl">✦</span>
           </span>
         ))}
       </div>
